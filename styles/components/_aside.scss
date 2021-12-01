@@ -1,0 +1,39 @@
+.aside {
+    position: fixed;
+    right: 0;
+    width: 20vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    @include glass-efx;
+    ul, a {
+        @include restart-text;
+    }
+
+    ul {
+        li {
+            margin: 20px 0 20px 0;
+            width: 20vw;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;            
+            
+            &:hover {
+                    background: rgba(228, 255, 75, 0.726);
+                    color: black;
+                    transition: .3s;
+            }
+            a {
+                font-size: $parraph;
+                font-weight: 600;
+                color: $title-color;
+                // &:hover {
+                //     transition: .5s;
+                //     color: black;
+                // }
+            }
+        }
+
+    }
+}
